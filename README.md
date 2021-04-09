@@ -1,4 +1,4 @@
-# Simple ToDo list maker
+# Simple ToDo list tracker
 
 ## Features:
 
