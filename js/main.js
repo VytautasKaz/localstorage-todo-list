@@ -24,9 +24,11 @@ let storage = JSON.parse(localStorage.getItem('todos'));
 
 formField.addEventListener('submit', function (e) {
     e.preventDefault();
-    todosArray.push(userInput.value);
-    localStorage.setItem('todos', JSON.stringify(todosArray));
-    todoMaker(userInput.value);
+    if (userInput.value != '') {
+        todosArray.push(userInput.value);
+        localStorage.setItem('todos', JSON.stringify(todosArray));
+        todoMaker(userInput.value);
+    }
 });
 
 // Display localstorage content when page
