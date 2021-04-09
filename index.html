@@ -5,25 +5,22 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>TODO app</title>
-        <link rel="stylesheet" href="./components/css/style.css" />
+        <link rel="stylesheet" href="./css/style.css" />
     </head>
     <body>
         <header>
             <h1>Todo Tracker</h1>
         </header>
-        <form class="user_input">
+        <form id="user_input">
             <input type="text" placeholder="New todo" />
+            <button class="add_todo" type="submit">Add</button>
         </form>
         <h2>Todos:</h2>
-        <div class="list-items">
-            <ul>
-                <li>Todo 1</li>
-                <li>Todo 2</li>
-                <li>Todo 3</li>
-            </ul>
-            <button class="clear-all">Clear All</button>
+        <div id="list_items">
+            <ul></ul>
+            <button id="clear-all">Clear All</button>
         </div>
     </body>
 
-    <script src="./components/js/main.js" type="module"></script>
+    <script src="./js/main.js" type="module"></script>
 </html>
