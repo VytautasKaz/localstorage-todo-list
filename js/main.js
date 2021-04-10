@@ -31,7 +31,7 @@ formField.addEventListener('submit', function (e) {
     }
 });
 
-// Display localstorage content when page
+// Display todos list (from localstorage) when page initially loads up
 
 for (let i = 0; i < storage.length; i++) {
     todoMaker(storage[i]);
